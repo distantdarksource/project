@@ -1,35 +1,19 @@
-"use strict";
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// let number = 4.6;
-
-// console.log(4/0);
-// console.log('string' * 9);
-
-// const persone = '5';
-
-// const bool = true;
-
-// // console.log(something);
-
-// let und;
-// console.log(und);
-
-
-const obj = {
-    name: 'John',
-    age: 25,
-    isMarried: false
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-// console.log(obj.name);
-// console.log(obj['love']);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените фильм?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените фильм?', '');
 
-// let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
-// console.log(arr[1])
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// _____________________________________________________________________
-
-
-// alert('Hello');
-
-const result = confirm('are you here?');
+console.log(personalMovieDB);
